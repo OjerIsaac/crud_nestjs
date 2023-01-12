@@ -1,5 +1,5 @@
 import * as dotenv from 'dotenv';
-dotenv.config({path: './env'});
+dotenv.config();
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -12,11 +12,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   imports: [CrudModule,       
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'ejiro',
-      password: '123',
-      database: 'crudApi',
+      host: process.env.POSTGRES_HOST,
+      port: Number(process.env.POSTGRES_PORT),
+      username: process.env.POSTGRES_USERNAME,
+      password: process.env.POSTGRES_PASSWORD,
+      database: process.env.POSTGRES_DB,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
    }),],
