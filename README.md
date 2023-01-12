@@ -8,7 +8,7 @@ This is a simple CRUD API powered by Nodejs, Nextjs and TS
 
 ## Features
 - Completely written in [Typescript](https://typescriptlang.org/)
-- [Nextjs](https://github.com/nestjs/nest)
+- [Nestjs](https://github.com/nestjs/nest) Nodejs framework
 - [PostgreSQL](https://www.postgresql.org/docs/) Open Source Relational Database
 - [TypeORM](https://typeorm.io/) SQL ORM for Nodejs
 
