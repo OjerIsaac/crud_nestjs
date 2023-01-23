@@ -25,4 +25,16 @@ This is a simple CRUD API powered by Nodejs, Nextjs and TS
 - `npm run start:dev`
 
 ## Documentation link
-- The endpoints for test of the service are provided in the [Postman Documentation](https://documenter.getpostman.com/view/25225100/2s8ZDR96Mv).
+- The endpoints for test of the service;
+- Create new data `http://localhost:3000/crud/create`
+- Fetch all data `http://localhost:3000/crud/`
+- Update data `http://localhost:3000/crud/2/update`
+- Delete data `http://localhost:3000/crud/2/update`
+
+## Fields to fill for endpoint
+- `firstName`
+- `lastName`
+- `email`
+- `phone`
+- `city`
+- `country`
