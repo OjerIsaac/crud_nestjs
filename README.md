@@ -1,4 +1,4 @@
-# JUNIOR BACKEND DEVELOPER ASSESSMENT
+# SIMPLE CRUD API USING NESTJS
 This is a simple CRUD API powered by Nodejs, Nextjs and TS
 
 ## Requirements
