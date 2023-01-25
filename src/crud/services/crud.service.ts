@@ -1,6 +1,6 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { Crud } from '../crud.entity';
-import { Repository, UpdateResult, DeleteResult } from 'typeorm';
+import { Repository, UpdateResult, DeleteResult, FindOneOptions } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 
 @Injectable()
@@ -13,6 +13,16 @@ export class CrudService {
     async  findAll(): Promise<Crud[]> {
         return await this.crudRepository.find();
     }
+
+    async findOne(id: number): Promise<Crud> {
+        const options: FindOneOptions = { where: { id: id }};
+        const record = await this.crudRepository.findOne(options);
+        if (!record) {
+            throw new NotFoundException('Record not found');
+        }
+        return record;
+    }
+    
 
     async  create(crud: Crud): Promise<Crud> {
         return await this.crudRepository.save(crud);
