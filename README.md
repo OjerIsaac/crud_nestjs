@@ -29,7 +29,8 @@ This is a simple CRUD API powered by Nodejs, Nextjs and TS
 - Create new data `http://localhost:3000/crud/create`
 - Fetch all data `http://localhost:3000/crud/`
 - Update data `http://localhost:3000/crud/2/update`
-- Delete data `http://localhost:3000/crud/2/update`
+- Delete data `http://localhost:3000/crud/2/delete`
+- Fetch single data `http://localhost:3000/crud/2`
 
 ## Fields to fill for endpoint
 - `firstName`
