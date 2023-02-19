@@ -9,7 +9,7 @@
 .idea/dictionaries
 
 # Miscellaneous
-README.mdd
+info.txt
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/

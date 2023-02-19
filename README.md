@@ -1,5 +1,5 @@
 # SIMPLE CRUD API USING NESTJS
-This is a simple CRUD API powered by Nodejs, Nextjs and TS
+This is a simple CRUD API powered by Nodejs, Nestjs and TS
 
 ## Requirements
 - NodeJS runtime
